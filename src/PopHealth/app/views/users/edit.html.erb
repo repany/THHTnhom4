@@ -1,0 +1,153 @@
+<div class="container">
+  <h1>Edit Health Information</h1>
+  <br>
+  <%= form_for @user do |f| %>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :gender %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.text_field :gender, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :weight %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :weight, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :dld %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :dld, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :hld %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :hld, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :triglycerides %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :triglycerides, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :sleep %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :sleep, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :exercise %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :exercise, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :happiness %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :happiness, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+      </div>
+ 
+      <div class="col-md-6">   
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :glucose %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :glucose, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :blood_pressure_systolic %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :blood_pressure_systolic, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :blood_pressure_diastolic %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :blood_pressure_diastolic, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :alcohol %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :alcohol, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :smoking %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :smoking, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :waist_circumference %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :waist_circumference, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :pain %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.number_field :pain, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <%= f.submit "Update", class: "btn btn-default"%>
+  <% end %>
+</div>

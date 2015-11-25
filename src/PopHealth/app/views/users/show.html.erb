@@ -1,0 +1,70 @@
+<div class="container">
+  <h1>Health Information</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Weight</td>
+        <td><%= @user.weight %></td>
+      </tr>
+      <tr>
+        <td>DLD</td>
+        <td><%= @user.dld %></td>
+      </tr>
+      <tr>
+        <td>HLD</td>
+        <td><%= @user.hld %></td>
+      </tr>
+      <tr>
+        <td>Triglycerides</td>
+        <td><%= @user.triglycerides %></td>
+      </tr>
+      <tr>
+        <td>Sleep</td>
+        <td><%= @user.sleep %></td>
+      </tr>
+      <tr>
+        <td>Exercise</td>
+        <td><%= @user.exercise %></td>
+      </tr>
+      <tr>
+        <td>Happiness</td>
+        <td><%= @user.happiness %></td>
+      </tr>
+      <tr>
+        <td>Glucose</td>
+        <td><%= @user.glucose %></td>
+      </tr>
+      <tr>
+        <td>Blood Pressure Systolic</td>
+        <td><%= @user.blood_pressure_systolic %></td>
+      </tr>
+      <tr>
+        <td>Blood Pressure Diastolic</td>
+        <td><%= @user.blood_pressure_diastolic %></td>
+      </tr>
+      <tr>
+        <td>Alcohol</td>
+        <td><%= @user.alcohol %></td>
+      </tr>
+      <tr>
+        <td>Smoking</td>
+        <td><%= @user.smoking %></td>
+      </tr>
+      <tr>
+        <td>Waist Circumference</td>
+        <td><%= @user.waist_circumference %></td>
+      </tr>
+      <tr>
+        <td>Pain</td>
+        <td><%= @user.pain %></td>
+      </tr>
+    </tbody>
+  </table>
+  <span><%= link_to "Xem HGraph", "http://localhost:8000/hGraph/examples/multiuser/" %></span>
+</div>
