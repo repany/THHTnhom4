@@ -57,10 +57,10 @@ Xem chi tiết hướng dẫn cài đặt mongoDB tại: https://docs.mongodb.or
 Mở Terminal đi đến thư mục sẽ chứa project
 Gõ lệnh
   - git clone https://github.com/trantube94/THHTnhom4.git
-  - cd thhtnhom4
+  - cd THHTnhom4
 
 ####2.2. Cài đặt thư viện cho pophealth
-Tại Terminal, di chuyển đến thư mục popHealth: THHTnhom4\src\popHealth
+Tại Terminal, di chuyển đến thư mục popHealth: THHTnhom4/src/popHealth
 
 Cài gem bundle
   - gem install bundler (-v "1.x.x")
@@ -74,10 +74,10 @@ Cài thư viện của project
 
 Chú ý các lỗi có thể xảy ra khi bundle
   - Không bundle được: Kiểm tra version của bundle
-  - Lỗi không tải được gem mysql2 có thể gõ lệnh: sudo apt-get install libmysqlclient-dev
   - 1 số gem không cài được trên ruby version 1.9.3 và 2.2.2
   
 ####2.3. Cài đặt database cho popHealth
+Mở Terminal, di chuyển đến thư mục popHealth
 
 Khởi tạo database
   - rake db:create
@@ -90,21 +90,21 @@ Tạo bảng cho database
 
 ##3. Chạy Project
 ####3.1 Module popHealth
-Di chuyển đến thu mục popHealth, chạy lệnh:
+Di chuyển đến thư mục popHealth, chạy lệnh:
   - rails server
 
 Mở trình duyệt, địa chỉ: http://localhost:3000
 
 ####3.2 Module hGraph
 Tạo local http server
-  - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (thhtnhom4\src),chạy lệnh:
+  - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (THHTnhom4/src),chạy lệnh:
     python -m SimpleHTTPServer
 
 Mở trình duyệt, địa chỉ: http://localhost:8000/HGraph/examples/
 
 ####3.3 Module cornerstone
 Tạo local http server
-  - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (thhtnhom4\src),chạy lệnh:
+  - Mở tab Terminal mới,di chuyển đến thư mục chứa cornerstone (THHTnhom4/src),chạy lệnh:
     python -m SimpleHTTPServer
 
 Mở trình duyệt, địa chỉ: http://localhost:8000/cornerstone/example/
