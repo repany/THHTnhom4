@@ -264,7 +264,7 @@ HGraph.prototype.initialize = function() {
 	this.context     = d3.select(this.container)
 	                      .append('svg')
 	                      .attr('class','healthscore')
-	                      .attr('width',this.width).attr('height',this.height);
+	                      .attr('width',this.width).attr('height',678);
 
 
 

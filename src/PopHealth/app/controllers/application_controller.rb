@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  protect_from_forgery with: :null_session
   layout :layout_by_resource
   before_filter :set_effective_date
   before_filter :check_ssl_used

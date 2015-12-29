@@ -173,6 +173,7 @@ GEM
       moped (~> 2.0.0)
       rubyzip (~> 0.9.9)
     rack (1.5.2)
+    rack-cors (0.3.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.5)
@@ -287,6 +288,7 @@ DEPENDENCIES
   pry
   pry-byebug
   quality-measure-engine (= 3.1.0)
+  rack-cors (= 0.3.1)
   rails (~> 4.1.2)
   rubyzip
   sass-rails (~> 4.0.2)
@@ -298,3 +300,6 @@ DEPENDENCIES
   uglifier
   unicorn
   will_paginate
+
+BUNDLED WITH
+   1.11.2

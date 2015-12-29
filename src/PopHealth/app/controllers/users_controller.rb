@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, except: :get_user
   load_and_authorize_resource
 
   def edit
@@ -17,9 +17,15 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find params[:id]
-
     respond_to do |format|
       format.html
+      format.json { render :json => custom_json_for(@user) }
+    end
+  end
+
+  def get_user
+    @user = User.find params[:id]
+    respond_to do |format|
       format.json { render :json => custom_json_for(@user) }
     end
   end

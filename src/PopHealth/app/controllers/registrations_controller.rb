@@ -1,6 +1,7 @@
 class RegistrationsController < Devise::RegistrationsController
   before_filter :configure_permitted_parameters, if: :devise_controller?
   wrap_parameters :user, format: [:json]
+  respond_to :json
 
   unless (APP_CONFIG['allow_user_update'])
     before_filter :authorize_user_update

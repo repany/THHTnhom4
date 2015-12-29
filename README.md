@@ -1,1 +1,110 @@
 ============= Health App =============
+
+##1. Hướng dẫn cài đặt môi trường
+
+####1.1. Cài đặt môi trường Ubuntu
+Download Ubuntu 14.04 tại đây: http://www.ubuntu.com/download/desktop
+
+Cách cài đặt tham khảo tại đây: http://vforum.vn/diendan/showthread.php?56703-Huong-dan-cach-tao-usb-cai-dat-ubuntu
+
+####1.2. Cài đặt Ruby on rails
+Cài git và curl
+  - sudo apt-get update
+  - sudo apt-get install git
+  - sudo apt-get install curl
+
+Cài RVM
+  - curl -L get.rvm.io | bash -s stable (Có thể bị lỗi, gõ lệnh theo chỉ dẫn báo lỗi)
+  - source ~/.rvm/scripts/rvm
+
+Xem các gói cần thiết cho RVM
+- rvm requirements
+
+Cài các gói cần thiết
+  - sudo apt-get -y install build-essential openssl libreadline6 libreadline6-dev
+  - sudo apt-get -y install zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0
+  - sudo apt-get -y install libsqlite3-dev sqlite3 libxml2-dev libmysqlclient-dev
+  - sudo apt-get -y install libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+
+Cài Ruby và Rails
+  - rvm install 2.1.2
+  - rvm use 2.1.2 --default
+  - gem install rails
+
+Cách sử dụng RVM (Ruby Version Manager) tham khảo tại đây: https://rvm.io/workflow/projects
+
+Nên sử dụng bản Ruby 2.1.2 vì đây là bản ổn định nhất.
+
+####1.3. Cài đặt database - mongoDB
+Mở Terminal chạy lần lượt các lệnh sau
+  - sudo apt-key adv --keyserver hkp: //keyserver.ubuntu.com: 80 --recv 7F0CEB10
+  - echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+  - sudo apt-get update
+  - sudo apt-get install -y mongodb-org
+
+Start mongoDB
+  - sudo service mongod start
+
+Stop mongoDB
+  - sudo service mongod stop
+
+Restart mongoDB
+  - sudo service mongod restart
+Xem chi tiết hướng dẫn cài đặt mongoDB tại: https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-ubuntu/
+
+##2. Cài đặt Project:
+####2.1. Download Project (gồm cả 3 module)
+Mở Terminal đi đến thư mục sẽ chứa project
+Gõ lệnh
+  - git clone https://github.com/trantube94/THHTnhom4.git
+  - cd thhtnhom4
+
+####2.2. Cài đặt thư viện cho pophealth
+Tại Terminal, di chuyển đến thư mục popHealth: THHTnhom4\src\popHealth
+
+Cài gem bundle
+  - gem install bundler (-v "1.x.x")
+
+Kiểm tra version của bundle
+  - bundle -v
+  - bundle nên dùng version >= 1.10
+
+Cài thư viện của project
+  - bundle install
+
+Chú ý các lỗi có thể xảy ra khi bundle
+  - Không bundle được: Kiểm tra version của bundle
+  - Lỗi không tải được gem mysql2 có thể gõ lệnh: sudo apt-get install libmysqlclient-dev
+  - 1 số gem không cài được trên ruby version 1.9.3 và 2.2.2
+  
+####2.3. Cài đặt database cho popHealth
+
+Khởi tạo database
+  - rake db:create
+
+Xóa database
+  - rake db:drop
+
+Tạo bảng cho database
+  - rake db:migrate
+
+##3. Chạy Project
+####3.1 Module popHealth
+Di chuyển đến thu mục popHealth, chạy lệnh:
+  - rails server
+
+Mở trình duyệt, địa chỉ: http://localhost:3000
+
+####3.2 Module hGraph
+Tạo local http server
+  - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (thhtnhom4\src),chạy lệnh:
+    python -m SimpleHTTPServer
+
+Mở trình duyệt, địa chỉ: http://localhost:8000/HGraph/examples/
+
+####3.3 Module cornerstone
+Tạo local http server
+  - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (thhtnhom4\src),chạy lệnh:
+    python -m SimpleHTTPServer
+
+Mở trình duyệt, địa chỉ: http://localhost:8000/cornerstone/example/

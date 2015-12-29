@@ -1,8 +1,7 @@
 PopHealth::Application.routes.draw do
-
   apipie
 
-  devise_for :users, :controllers => {:registrations => "registrations"}
+  devise_for :users, :controllers => {sessions: 'sessions', registrations: "registrations"}
   resources :users
 
   get "admin/users"
@@ -20,6 +19,7 @@ PopHealth::Application.routes.draw do
   post 'api/measures/finalize'
   post 'api/measures/update_metadata'
   get "logs/index"
+  get "users/get_user/:id" => "users#get_user"
 
   root :to => 'home#index'
 
@@ -40,6 +40,9 @@ PopHealth::Application.routes.draw do
   resources :teams
 
   namespace :api do
+    resources :users, only: [:index, :show, :create, :update, :destroy]
+    resources :sessions, only: [:create, :destroy]
+
     get 'reports/qrda_cat3.xml', :to =>'reports#cat3', :format => :xml
     get 'reports/cat1/:id/:measure_ids', :to =>'reports#cat1', :format => :xml
     namespace :admin do

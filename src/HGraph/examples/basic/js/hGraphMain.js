@@ -125,7 +125,7 @@ $(document).ready(function (){
 					graph.width = 760;
 					graph.height = 602;
 					graph.initialize();
-					$('#zoom').on('click', function(){
+					$('#zoom').click(function() {
 						console.log(graph.isZoomed)
 						if (graph.isZoomed)
 							graph.zoomOut();
@@ -252,9 +252,9 @@ $(document).ready(function (){
 						else{ returnall(); }		
 					});
 					
-					$('.graph_nav_opt').on("mousedown",function(){
+					$('.graph_nav_opt').mousedown( function(){
 						$(this).removeClass("grad1").addClass("grad2");
-					}).on("mouseup",function(){
+					}).mouseup( function(){
 						$(this).removeClass("grad2").addClass("grad1");
 					});
 					//*//

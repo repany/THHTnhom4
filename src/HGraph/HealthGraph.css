@@ -5,26 +5,42 @@
 
 /*Color of ring*/
 .ring {
-	fill : #97be8c;
+  fill : #97be8c;
 }
 
 /*Color of web that connects datapoints*/
 .web {
-	fill : rgba(0,0,0,0.1);
+  fill : rgba(0,0,0,0.1);
 }
 
 /*Color of circle + labels of healty datapoints*/
 .healthy {
-	fill : #616363;
+  fill : #616363;
 }
 
 /*Color of circle + labels of unhealty datapoints*/
 .unhealthy {
-	fill : #e1604f;
+  fill : #e1604f;
 }
 
 /*Enables pointer cursor for clickable labels and circles*/
 text.clickable,
 circle.clickable {
-	cursor : pointer;
+  cursor : pointer;
+}
+
+#menu {
+  height: 80px;
+  text-align: left;
+  min-height: 750px;
+  border-right: 1px solid #111;
+}
+
+#menu-item {
+  min-height: 50px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: lavender;
+  box-shadow: 2px 2px 2px #888888;
 }
