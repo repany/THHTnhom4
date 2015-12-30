@@ -29,6 +29,30 @@
       </div>
       <div class="col-xs-10">
         <div class="container">
+            <h3>Dữ liệu ảnh bệnh nhân</h3>
+            <div style="width: 500px;" id="form">
+              <div class="row">
+                <div class="col-xs-4" style="padding-top:5px;">
+                  <b>Username</b>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-control" placeholder="Nhập username" id="username">
+                </div>
+                <div class="col-xs-4" style="padding-top:5px;">
+                  <b>Password</b>
+                </div>
+                <div class="col-xs-8">
+                  <input type="password" class="form-control" placeholder="Nhập password" id="password">
+                </div>
+              </div>
+              <span class="btn btn-primary" id="submit" style="margin-left: 0px;">
+              Đồng bộ hóa
+              </span>
+              <span style="margin-left: 10px;"><a href="http://localhost:3000/users/sign_up">Đăng ký</a></span>
+            </div>
+            <button class="btn btn-primary" id="try_again">Nhập lại tài khoản</button><br><br>
+            <img id="image_info" height="100px" weight="100px">
+            <hr>
             <h1>Các tính năng</h1>
 
             <ul>
@@ -62,31 +86,6 @@
             </ul>
 
             <hr>
-
-            <h2>Dữ liệu ảnh bệnh nhân</h2>
-            <div style="width: 500px;" id="form">
-              <div class="row">
-                <div class="col-xs-4" style="padding-top:5px;">
-                  <b>Username</b>
-                </div>
-                <div class="col-xs-8">
-                  <input type="text" class="form-control" placeholder="Nhập username" id="username">
-                </div>
-                <div class="col-xs-4" style="padding-top:5px;">
-                  <b>Password</b>
-                </div>
-                <div class="col-xs-8">
-                  <input type="password" class="form-control" placeholder="Nhập password" id="password">
-                </div>
-              </div>
-              <span class="btn btn-primary" id="submit" style="margin-left: 20px;">
-              Đồng bộ hóa
-              </span>
-              <span><a href="http://localhost:3000/users/sign_up">Đăng ký</a></span>
-            </div>
-            <button class="btn btn-primary" id="try_again">Nhập lại tài khoản</button>
-            <br><br><br>
-            <img id="image_info" height="100px" weight="100px">
         </div>
       </div>
 <script type="text/javascript">
