@@ -7,6 +7,18 @@ class ApplicationController < ActionController::Base
   # lock it down!
   check_authorization :unless => :devise_controller?
 
+  def upload user
+    dirname = Rails.root.join('public', 'uploads', "user_#{user.id}", 'image_info')
+    FileUtils.mkdir_p(dirname)
+    uploaded_io = params[:user][:image_info]
+    image_path = dirname.to_s + '/' + uploaded_io.original_filename
+    File.open(image_path, 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+    user.image_info = "/uploads/user_#{user.id}/image_info/#{uploaded_io.original_filename}"
+    user.save
+  end
+
   private
 
   # Overwriting the sign_out redirect path method

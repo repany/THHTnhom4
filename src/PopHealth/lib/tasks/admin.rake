@@ -27,4 +27,31 @@ namespace :admin do
     admin_account.save!
     admin_account.grant_admin
   end
+
+  task :create_user_account do
+    10.times do |n|
+      User.create(
+        :first_name =>     "User#{n}",
+        :last_name =>      "User#{n}",
+        :username =>       "user#{n}user#{n}",
+        :password =>       "user#{n}user#{n}",
+        :email =>          "User#{n}@providemycompanyname.com",
+        :agree_license =>  true,
+        :gender =>         "male",
+        :weight =>         112,
+        :dld => 110,
+        :hld => 55,
+        :triglycerides => 128,
+        :sleep => 6,
+        :exercise => 3,
+        :happiness => 8, 
+        :glucose => 99,
+        :blood_pressure_systolic => 122,
+        :blood_pressure_diastolic => 85,
+        :alcohol => 1,
+        :smoking => 0,
+        :waist_circumference => 26,
+        :pain => 2)
+    end
+  end
 end

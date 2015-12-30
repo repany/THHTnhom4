@@ -2,11 +2,16 @@ class UsersController < ApplicationController
   before_filter :authenticate_user!, except: :get_user
   load_and_authorize_resource
 
+  def index
+    @users = User.all
+  end
+
   def edit
     @user = User.find params[:id]
   end
 
   def update
+    upload @user
     @user = User.find params[:id]
     if @user.update_attributes user_params
       redirect_to @user

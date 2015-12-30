@@ -5,18 +5,9 @@
          {
             "name":"LDL",
             "features":{
-               "healthyrange":[
-                  74,
-                  107
-               ],
-               "totalrange":[
-                  0,
-                  160
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[74, 107],
+               "totalrange":[0, 160],
+               "boundayflags":[false, true],
                "weight":9,
                "unitlabel":"mg/dl"
             }
@@ -24,18 +15,9 @@
          {
             "name":"HDL",
             "features":{
-               "healthyrange":[
-                  65,
-                  90
-               ],
-               "totalrange":[
-                  0,
-                  130
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[65, 90],
+               "totalrange":[0, 130],
+               "boundayflags":[false, true],
                "weight":4,
                "unitlabel":"mg/dl"
             }
@@ -43,18 +25,9 @@
          {
             "name":"Triglycerides",
             "features":{
-               "healthyrange":[
-                  348,
-                  492
-               ],
-               "totalrange":[
-                  0,
-                  600
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[348,492],
+               "totalrange":[0,600],
+               "boundayflags":[false,true],
                "weight":3,
                "unitlabel":"mg/dl"
             }
@@ -62,18 +35,9 @@
          {
             "name":"Sleep",
             "features":{
-               "healthyrange":[
-                  6,
-                  8
-               ],
-               "totalrange":[
-                  0,
-                  18
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[6,8],
+               "totalrange":[0,18],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"hours/night"
             }
@@ -81,18 +45,9 @@
          {
             "name":"Exercise",
             "features":{
-               "healthyrange":[
-                  35,
-                  63
-               ],
-               "totalrange":[
-                  0,
-                  120
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[35,63],
+               "totalrange":[ 0,120],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"hours/week"
             }
@@ -100,18 +55,9 @@
          {
             "name":"Happiness",
             "features":{
-               "healthyrange":[
-                  6,
-                  9
-               ],
-               "totalrange":[
-                  0,
-                  10
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[6,9],
+               "totalrange":[ 0,10],
+               "boundayflags":[false,true],
                "weight":3,
                "unitlabel":"happiness scale"
             }
@@ -119,18 +65,9 @@
          {
             "name":"Glucose",
             "features":{
-               "healthyrange":[
-                  61,
-                  100
-               ],
-               "totalrange":[
-                  0,
-                  160
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[61,100],
+               "totalrange":[0,160],
+               "boundayflags":[false,true],
                "weight":10,
                "unitlabel":"mg/dl"
             }
@@ -138,18 +75,9 @@
          {
             "name":"Blood Pressure Systolic",
             "features":{
-               "healthyrange":[
-                  99,
-                  148
-               ],
-               "totalrange":[
-                  50,
-                  230
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[99,148],
+               "totalrange":[50,230],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"mm/Hg"
             }
@@ -214,18 +142,9 @@
          {
             "name":"Waist Circumference",
             "features":{
-               "healthyrange":[
-                  66,
-                  75
-               ],
-               "totalrange":[
-                  0,
-                  200
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[66, 75],
+               "totalrange":[0, 200],
+               "boundayflags":[false, true],
                "weight":10,
                "unitlabel":"inches"
             }
@@ -233,18 +152,9 @@
          {
             "name":"Pain",
             "features":{
-               "healthyrange":[
-                  1,
-                  4
-               ],
-               "totalrange":[
-                  0,
-                  10
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[1, 4],
+               "totalrange":[0, 10],
+               "boundayflags":[false, true],
                "weight":3,
                "unitlabel":"pain scale"
             }
@@ -257,18 +167,9 @@
          {
             "name":"LDL",
             "features":{
-               "healthyrange":[
-                  73,
-                  104
-               ],
-               "totalrange":[
-                  0,
-                  160
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[73, 104],
+               "totalrange":[0, 160],
+               "boundayflags":[false, true],
                "weight":9,
                "unitlabel":"mg/dl"
             }
@@ -276,18 +177,9 @@
          {
             "name":"HDL",
             "features":{
-               "healthyrange":[
-                  79,
-                  106
-               ],
-               "totalrange":[
-                  0,
-                  130
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[79, 106],
+               "totalrange":[0, 130],
+               "boundayflags":[false, true],
                "weight":4,
                "unitlabel":"mg/dl"
             }
@@ -295,18 +187,9 @@
          {
             "name":"Triglycerides",
             "features":{
-               "healthyrange":[
-                  355,
-                  501
-               ],
-               "totalrange":[
-                  0,
-                  600
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[355,501],
+               "totalrange":[0,600],
+               "boundayflags":[false,true],
                "weight":3,
                "unitlabel":"mg/dl"
             }
@@ -314,18 +197,9 @@
          {
             "name":"Sleep",
             "features":{
-               "healthyrange":[
-                  4,
-                  6
-               ],
-               "totalrange":[
-                  0,
-                  18
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[4,6 ],
+               "totalrange":[ 0,18],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"hours/night"
             }
@@ -333,18 +207,9 @@
          {
             "name":"Exercise",
             "features":{
-               "healthyrange":[
-                  37,
-                  65
-               ],
-               "totalrange":[
-                  0,
-                  120
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[ 37,65],
+               "totalrange":[0,120],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"hours/week"
             }
@@ -352,18 +217,9 @@
          {
             "name":"Happiness",
             "features":{
-               "healthyrange":[
-                  6,
-                  9
-               ],
-               "totalrange":[
-                  0,
-                  10
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[6,9],
+               "totalrange":[0,10],
+               "boundayflags":[false, true],
                "weight":3,
                "unitlabel":"happiness scale"
             }
@@ -371,18 +227,9 @@
          {
             "name":"Glucose",
             "features":{
-               "healthyrange":[
-                  55,
-                  95
-               ],
-               "totalrange":[
-                  0,
-                  160
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[55,95],
+               "totalrange":[0,160],
+               "boundayflags":[false,true],
                "weight":10,
                "unitlabel":"mg/dl"
             }
@@ -390,18 +237,9 @@
          {
             "name":"Blood Pressure Systolic",
             "features":{
-               "healthyrange":[
-                  102,
-                  151
-               ],
-               "totalrange":[
-                  50,
-                  230
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[102,151],
+               "totalrange":[ 50,230],
+               "boundayflags":[false,true],
                "weight":5,
                "unitlabel":"mm/Hg"
             }
@@ -409,18 +247,9 @@
          {
             "name":"Blood Pressure Diastolic",
             "features":{
-               "healthyrange":[
-                  62,
-                  92
-               ],
-               "totalrange":[
-                  35,
-                  140
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[62, 92],
+               "totalrange":[35, 140],
+               "boundayflags":[false, true],
                "weight":5,
                "unitlabel":"mm/Hg"
             }
@@ -428,18 +257,9 @@
          {
             "name":"Alcohol",
             "features":{
-               "healthyrange":[
-                  1,
-                  3
-               ],
-               "totalrange":[
-                  0,
-                  20
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[1, 3],
+               "totalrange":[0, 20],
+               "boundayflags":[false, true],
                "weight":5,
                "unitlabel":"drinks/week"
             }
@@ -447,18 +267,9 @@
          {
             "name":"Smoking",
             "features":{
-               "healthyrange":[
-                  0,
-                  1
-               ],
-               "totalrange":[
-                  0,
-                  10
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[0, 1],
+               "totalrange":[0, 10],
+               "boundayflags":[false, true],
                "weight":5,
                "unitlabel":"cigarettes/day"
             }
@@ -466,18 +277,9 @@
          {
             "name":"Waist Circumference",
             "features":{
-               "healthyrange":[
-                  70,
-                  79
-               ],
-               "totalrange":[
-                  0,
-                  200
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[70, 79],
+               "totalrange":[0, 200],
+               "boundayflags":[false, true],
                "weight":10,
                "unitlabel":"inches"
             }
@@ -485,18 +287,9 @@
          {
             "name":"Pain",
             "features":{
-               "healthyrange":[
-                  0,
-                  3
-               ],
-               "totalrange":[
-                  0,
-                  10
-               ],
-               "boundayflags":[
-                  false,
-                  true
-               ],
+               "healthyrange":[0, 3],
+               "totalrange":[0, 10],
+               "boundayflags":[false, true],
                "weight":3,
                "unitlabel":"pain scale"
             }

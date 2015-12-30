@@ -9,6 +9,7 @@ class User
   after_initialize :build_preferences, unless: Proc.new { |user| user.preferences.present? }
   before_save :denullify_arrays
   before_create :set_defaults
+  before_create :create_avatar
 
   DEFAULT_EFFECTIVE_DATE = Time.gm(2011, 1, 1)
 
@@ -47,6 +48,8 @@ class User
   field :first_name, type: String
   field :last_name, type: String
   field :username, type: String
+  field :avatar, type: String
+  field :image_info, type: String
   field :email, type: String
   field :company, type: String
   field :company_url, type: String
@@ -135,6 +138,7 @@ class User
   def self.by_username(username)
     where(username: username).first
   end
+
   def self.by_email(email)
     where(email: email).first
   end
@@ -156,4 +160,8 @@ class User
     update_attribute(:admin, false)
   end
 
+  def create_avatar
+    self.avatar = "avatar.jpg" if self.avatar.nil?
+    self.image_info = "avatar.jpg" if self.image_info.nil?
+  end
 end

@@ -13,10 +13,6 @@
           </div>
         </div>
         <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
         <div class="form-group row">
           <div class="col-xs-5" style="padding-top:8px;">
             <%= f.label :weight %>
@@ -82,7 +78,16 @@
         <hr>
       </div>
  
-      <div class="col-md-6">   
+      <div class="col-md-6">
+        <div class="form-group row">
+          <div class="col-xs-5" style="padding-top:8px;">
+            <%= f.label :image_info %>
+          </div>
+          <div class="col-xs-7">
+            <%= f.file_field :image_info, class: "form-control" %>
+          </div>
+        </div>
+        <hr>
         <div class="form-group row">
           <div class="col-xs-5" style="padding-top:8px;">
             <%= f.label :glucose %>
