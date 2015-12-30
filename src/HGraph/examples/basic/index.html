@@ -44,9 +44,9 @@
           <div id="menu-item"><a href="http://localhost:8000/cornerstone/example/">Cornerstone</a></div>
         </div>
       </div>
-      <div class="col-xs-10" ng-app="hgraph" ng-controller="hgraphCtrl">
-        <div style="width: 500px;" id="form">
-          <div class="row">
+      <div class="col-xs-10">
+        <div style="width: 500px; min-height: 120px; padding-left: 150px;">
+          <div class="row" id="form">
             <div class="col-xs-4" style="padding-top:5px;">
               <b>Username</b>
             </div>
@@ -58,15 +58,15 @@
             </div>
             <div class="col-xs-8">
               <input type="password" class="form-control" placeholder="Nhập password" id="password">
-              </div>
+            </div>
+            <br>
+            <div class="btn btn-primary" id="submit" style="margin-left: 20px;">
+              Đồng bộ hóa
+            </div>
           </div>
-          <div class="btn btn-primary" id="submit">
-            Đồng bộ hóa
-          </div>
+          <button class="btn btn-primary" id="try_again">Nhập tài khoản</button>
         </div>
         
-        <button class="btn btn-primary" id="try_again">Nhập tài khoản</button>
-
         <section id="main">
           <header class="cf content_inset">
             <div class="fleft">

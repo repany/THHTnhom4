@@ -42,6 +42,7 @@ PopHealth::Application.routes.draw do
   namespace :api do
     resources :users, only: [:index, :show, :create, :update, :destroy]
     resources :basics, only: [:create]
+    resources :image_users, only: [:create]
     resources :multiusers, only: [:create]
 
     get 'reports/qrda_cat3.xml', :to =>'reports#cat3', :format => :xml
