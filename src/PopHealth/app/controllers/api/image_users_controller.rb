@@ -7,7 +7,7 @@ class Api::ImageUsersController < ApplicationController
 
     if !user.nil? && user.valid_password?(user_password)
       sign_in user, store: false
-      render json: { image_info: "http://localhost:3000#{user.image_info}" }, status: 200, location: [:api, user]
+      render json: { image_info: "http://localhost:3000/#{user.image_info}" }, status: 200, location: [:api, user]
     else
       render json: { errors: "Invalid email or password" }, status: 422
     end
