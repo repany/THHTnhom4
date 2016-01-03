@@ -95,6 +95,10 @@ Di chuyển đến thư mục popHealth, chạy lệnh:
 
 Mở trình duyệt, địa chỉ: http://localhost:3000
 
+Tài khoản admin: pophealth, mật khẩu: pophealth
+
+Tài khoản user: user1user1, mật khẩu: user1user1
+
 ####3.2 Module hGraph
 Tạo local http server
   - Mở tab Terminal mới,di chuyển đến thư mục chứa hGraph (THHTnhom4/src),chạy lệnh:
